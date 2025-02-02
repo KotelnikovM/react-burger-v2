@@ -1,0 +1,1 @@
+echo "eslint.config.js text eol=lf" >> .gitattributes
