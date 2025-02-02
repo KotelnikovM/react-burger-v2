@@ -1,0 +1,61 @@
+---
+name: Button
+route: /button
+---
+
+import { Playground } from 'docz'
+import { Button }  from '../';
+import { Props } from './components/props';
+
+# Button
+
+## Custom properties
+
+<Props whiteList={[
+    'type',
+    'size',
+    'onClick',
+    'extraClass',
+    'htmlType',
+]} of={Button} />
+
+## Primary small
+
+<Playground>
+    <Button htmlType="button" type="primary" size="small" extraClass="ml-2">Нажми на меня</Button>
+</Playground>
+
+## Primary medium
+
+<Playground>
+    <Button htmlType="button" type="primary" size="medium">Нажми на меня</Button>
+</Playground>
+
+## Primary large
+
+<Playground>
+    <Button htmlType="button" type="primary" size="large">Нажми на меня</Button>
+</Playground>
+
+## Secondary small
+
+<Playground>
+    <Button htmlType="button" type="secondary" size="small">Нажми на меня</Button>
+</Playground>
+
+## Secondary medium
+
+<Playground>
+    <Button htmlType="button" type="secondary" size="medium">Нажми на меня</Button>
+</Playground>
+
+## Secondary large
+
+<Playground>
+    <Button htmlType="button" type="secondary" size="large">Нажми на меня</Button>
+</Playground>
+
+
+## All properties
+
+<Props of={Button} />

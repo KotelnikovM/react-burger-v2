@@ -13,6 +13,17 @@ export default [
   {
     rules: {
       'react/react-in-jsx-scope': 'off',
+      'triple-slash-reference': 'off',
+      '@typescript-eslint/no-unused-expressions': [
+        'error',
+        {
+          allowShortCircuit: true, // Разрешить конструкции типа `a && b()`
+          allowTernary: true, // Разрешить тернарные операторы
+          allowTaggedTemplates: true,
+        },
+      ],
+      '@typescript-eslint/triple-slash-reference': 'off',
+      '@typescript-eslint/ban-ts-comment': 'off',
     },
   },
 ]
